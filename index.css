@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+    
+}
+body{
+    
+    min-height: 100vh;
+    align-items: center;
+    background-color:  hsl(217, 54%, 11%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+main{
+    border-radius: 5px;
+    max-width: 280px;
+    background-color: hsl(216, 50%, 16%);
+    margin: auto;
+    padding: 25px;
+    box-shadow: 0 0 100px rgb(0, 0, 0, 0.5);
+}
+hr{
+    border: 1px solid hsl(215, 32%, 27%);
+}
+
+p{
+    font-size: 18px;
+}
+
+p, .last{
+    color: gray;
+}
+
+.top-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.main-img img{ 
+    width: 100%;
+    border-radius: 5px;
+}
+
+.overlay{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    border-radius: 10px;
+    transition: opacity 0.5s;
+    opacity: 0;
+    background-color: hsl(178, 100%, 50%, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.overlay:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+.content h1{
+    font-size: 20px;
+}
+.content h1:hover{
+    color: hsl(178, 100%, 50%);;
+    cursor: pointer;
+}
+.content p{
+    color: hsl(215, 51%, 70%, 0.7);
+    font-weight: 400;
+}
+.info{
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: space-between;
+}
+.right-side{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+}
+.left-side{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+}
+.info img{
+    margin-right: 5px;
+}
+.left-side p{
+    color: hsl(178, 100%, 50%);
+    font-weight: 600;
+}
+.right-side p{
+    color: hsl(215, 51%, 70%, 0.7);
+    font-weight: 400;
+}
+
+.main-img{
+    border-radius: 10px;
+}
+h1{
+    margin: 10px 0l;
+    font-size: 28px;
+    
+}
+.author{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 14px;
+}
+.author p{
+    font-size: 16px;
+    color: hsl(215, 51%, 70%, 0.7);
+    
+}
+.avatar{
+    display: flex;
+    align-items: center;
+    width: 30px;
+}
+.avatar img{
+    max-width: 30px;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+.creation{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.creation p{
+font-size: 14px;
+}
+.creation h3{
+    font-size: 14px;
+}
+.creation h3:hover{
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
+footer{
+    font-size: 11px;
+    text-align: center;
+}
